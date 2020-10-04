@@ -1,0 +1,44 @@
+/*Basic reset*/
+   *,
+   *::before,
+   *::after {
+   margin: 0; padding: 0; box-sizing: border-box; 
+   }
+    
+   /* Custom properties */
+   :root {
+   --black: #333333; 
+   }
+    
+   /* Global styles */
+   html {
+   font-size: 10px; 
+   }
+
+   body {
+   font-size: 1.6rem;
+   font-family: 'Inter', sans-serif;
+   }
+
+
+body {
+   margin: 0;
+   font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+   padding: 0 3rem;
+}
+.card {
+   border-radius: 5px;
+   overflow: hidden;
+   background: #f0f3fa;
+   text-align: center;
+}
+
+.card:before {
+   content: "";
+   height: 4px;
+   display: block;
+   background: red;
+}
